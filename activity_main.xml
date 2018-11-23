@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/connect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="connect socket" />
+
+            <Button
+                android:id="@+id/disconnect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="disconnect socket"
+                android:textAllCaps="false"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="向服务端发送数据"
+                android:padding="5dp"
+                android:background="#009934"/>
+
+            <Button
+                android:id="@+id/send_start_session"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="send start_session"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/send_stop_session"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="send stop_session"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/send_get_device_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="send get_device_info"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/send_ls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="send ls"
+                android:textAllCaps="false"/>
+
+            <TextView
+                android:id="@+id/send_argument"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="參数："
+                android:padding="10dp"
+                android:background="@color/colorAccent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="从服务端接收数据"
+                android:padding="5dp"
+                android:background="#009934"/>
+
+            <Button
+                android:id="@+id/receive_start_session"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="receive start_session"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/receive_stop_session"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="receive stop_session"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/receive_get_device_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="receive get_device_info"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/receive_ls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="receive ls"
+                android:textAllCaps="false"/>
+
+            <TextView
+                android:id="@+id/receive_argument"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="參数："
+                android:padding="10dp"
+                android:background="@color/colorAccent"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
